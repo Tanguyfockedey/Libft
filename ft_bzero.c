@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/03 15:51:56 by tafocked          #+#    #+#             */
-/*   Updated: 2023/04/03 15:51:56 by tafocked         ###   ########.fr       */
+/*   Created: 2023/04/03 15:51:40 by tafocked          #+#    #+#             */
+/*   Updated: 2023/04/03 15:51:40 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-	This function copies the value of c (converted to an unsigned char) into 
-	each of the first size bytes of the object beginning at block. It returns 
-	the value of block.
+	This function copies the value "0" into	each of the first size bytes of the 
+	object beginning at block.
 */
 
 #include "libft.h"
 
-void	*ft_memset(void *block, int c, size_t size)
+void	ft_bzero(void *block, size_t size)
 {
 	char	*ptr;
 
-	ptr = (unsigned char *)block;
+	ptr = (char *)block;
 	while (size--)
-		ptr[size] = c;
-	return (block);
+		ptr[size] = 0;
 }
