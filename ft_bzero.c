@@ -21,7 +21,7 @@ void	ft_bzero(void *block, size_t size)
 {
 	char	*ptr;
 
-	ptr = (char *)block;
+	ptr = block;
 	while (size--)
 		ptr[size] = 0;
 }
