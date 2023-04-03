@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:54:49 by tafocked          #+#    #+#             */
-/*   Updated: 2023/04/03 15:29:04 by tafocked         ###   ########.fr       */
+/*   Updated: 2023/04/03 16:17:21 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
 
 void	*ft_memchr(const void *block, int c, size_t size)
 {
-	char	*mem;
-	size_t	i;
+	unsigned char	*mem;
+	size_t			i;
 
 	mem = (unsigned char *)block;
 	i = 0;

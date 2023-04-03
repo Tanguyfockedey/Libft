@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:41:03 by tafocked          #+#    #+#             */
-/*   Updated: 2023/04/03 15:05:45 by tafocked         ###   ########.fr       */
+/*   Updated: 2023/04/03 16:18:50 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t size)
 	size_t	i;
 
 	i = 0;
-	if (size = 0)
+	if (size == 0)
 		return (0);
 	while (s1[i] && i < size - 1)
 	{

@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:14:59 by tafocked          #+#    #+#             */
-/*   Updated: 2023/04/03 14:21:22 by tafocked         ###   ########.fr       */
+/*   Updated: 2023/04/03 16:19:14 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	size_t	i;
 
 	i = 0;
-	if (size = 0)
+	if (size == 0)
 		return (ft_strlen(src));
 	while (src[i] && i < size - 1)
 	{

@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:21:54 by tafocked          #+#    #+#             */
-/*   Updated: 2023/04/03 14:29:47 by tafocked         ###   ########.fr       */
+/*   Updated: 2023/04/03 16:19:04 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	i;
 	size_t	j;
 
-	if (size = 0)
+	if (size == 0)
 		return (ft_strlen(src));
 	i = ft_strlen(dest);
 	if (size <= i)
