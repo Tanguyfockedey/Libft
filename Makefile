@@ -6,7 +6,7 @@
 #    By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/03 11:23:13 by tafocked          #+#    #+#              #
-#    Updated: 2023/04/05 15:16:35 by tafocked         ###   ########.fr        #
+#    Updated: 2023/04/05 15:46:58 by tafocked         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,15 @@ FILES	= ft_isalpha.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
 
-B_FILES	= 
+B_FILES	= ft_lstnew.c \
+			ft_lstadd_front.c \
+			ft_lstsize.c \
+			ft_lstlast.c \
+			ft_lstadd_back.c \
+			ft_lstdelone.c \
+			ft_lstclear.c \
+			ft_lstiter.c \
+			ft_lstmap.c \
 
 CC		= cc
 CFLAGS	= -Wall -Wextra -Werror
