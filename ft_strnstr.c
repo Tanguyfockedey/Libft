@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 15:18:36 by tafocked          #+#    #+#             */
-/*   Updated: 2023/04/03 15:49:30 by tafocked         ###   ########.fr       */
+/*   Updated: 2023/04/05 18:05:38 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (!big)
+		return (0);
 	if (!little[0])
 		return ((char *)big);
 	i = 0;

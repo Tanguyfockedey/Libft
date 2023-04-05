@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:41:03 by tafocked          #+#    #+#             */
-/*   Updated: 2023/04/03 16:18:50 by tafocked         ###   ########.fr       */
+/*   Updated: 2023/04/05 17:04:41 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t size)
 	while (s1[i] && i < size - 1)
 	{
 		if (s1[i] != s2[i])
-			return ((int)(s1[i] - s2[i]));
+			return ((int)((unsigned char)s1[i] - (unsigned char)s2[i]));
 		i++;
 	}
-	return ((int)(s1[i] - s2[i]));
+	return ((int)((unsigned char)s1[i] - (unsigned char)s2[i]));
 }

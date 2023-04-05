@@ -21,6 +21,7 @@
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	size_t	len;
+	size_t	i;
 	char	*str;
 
 	if (!s || !(*f))
@@ -30,7 +31,11 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	if (!str)
 		return (0);
 	str[len] = '\0';
-	while (len-- > 0)
-		str[len] = (*f)(len, s[len]);
+	i = 0;
+	while (i < len)
+	{
+		str[i] = (*f)(i, s[i]);
+		i++;
+	}
 	return (str);
 }
