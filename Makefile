@@ -6,7 +6,7 @@
 #    By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/03 11:23:13 by tafocked          #+#    #+#              #
-#    Updated: 2023/04/03 16:44:47 by tafocked         ###   ########.fr        #
+#    Updated: 2023/04/05 15:16:35 by tafocked         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,18 @@ FILES	= ft_isalpha.c \
 			ft_atoi.c \
 			ft_calloc.c \
 			ft_strdup.c \
-			
+			ft_substr.c \
+			ft_strjoin.c \
+			ft_strtrim.c \
+			ft_split.c \
+			ft_itoa.c \
+			ft_strmapi.c \
+			ft_striteri.c \
+			ft_putchar_fd.c \
+			ft_putstr_fd.c \
+			ft_putendl_fd.c \
+			ft_putnbr_fd.c \
+
 B_FILES	= 
 
 CC		= cc
