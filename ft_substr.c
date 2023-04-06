@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 12:42:46 by tafocked          #+#    #+#             */
-/*   Updated: 2023/04/05 12:50:20 by tafocked         ###   ########.fr       */
+/*   Updated: 2023/04/06 13:56:34 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,17 @@
 */
 
 #include "libft.h"
+
+static char	*ft_emptystring(void)
+{
+	char	*substr;
+
+	substr = malloc(sizeof(char));
+	if (!substr)
+		return (0);
+	substr[0] = '\0';
+	return (substr);
+}
 
 char	*ft_substr(const char *str, size_t start, size_t len)
 {
@@ -28,11 +39,7 @@ char	*ft_substr(const char *str, size_t start, size_t len)
 	if (len + start > i)
 		len = i - start;
 	if (start > i)
-	{
-		substr = malloc(sizeof(char));
-		substr[0] = '\0';
-		return (substr);
-	}
+		return (ft_emptystring());
 	substr = malloc((len + 1) * sizeof(char));
 	if (!substr)
 		return (0);
